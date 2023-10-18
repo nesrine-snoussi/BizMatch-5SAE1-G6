@@ -60,5 +60,11 @@ public class UserController {
         return "redirect:/login?logout"; // Rediriger avec un paramètre indiquant la déconnexion
     }
 
+    @GetMapping("/test")
+    public String test (@RequestBody String username) {
+        String test = "Hello" + username;
+        return test ;
+    }
+
 
 }

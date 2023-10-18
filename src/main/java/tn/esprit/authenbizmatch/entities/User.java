@@ -18,6 +18,8 @@ public class User implements Serializable {
     private int id ;
     private String username;
     private String password;
+    @Enumerated(EnumType.STRING)
+    private Role role ;
 
     private String email;
     @Transient
