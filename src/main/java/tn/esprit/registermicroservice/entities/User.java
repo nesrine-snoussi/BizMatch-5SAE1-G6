@@ -25,6 +25,8 @@ public class User implements Serializable {
     private String email;
     @Transient
     private String confirmpassword;
+    @Enumerated(EnumType.STRING)
+    private Role role ;
 
     private String token;
     @Column(columnDefinition = "TIMESTAMP")
